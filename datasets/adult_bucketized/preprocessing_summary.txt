@@ -1,0 +1,18 @@
+Input file: datasets_raw\adult\adult.csv
+Rows written: 32561
+Output CSV: datasets\adult_bucketized\adult_bucketized.csv
+Config: datasets\adult_bucketized\config.json
+
+Feature domains:
+  age_bucket: 25-34=8479, 35-44=8151, 45-54=5853, 17-24=5570, 55-64=3172, 65+=1336
+  workclass: Private=22696, Self-emp-not-inc=2541, Local-gov=2093, missing=1836, State-gov=1298, Self-emp-inc=1116, Federal-gov=960, Without-pay=14, Never-worked=7
+  education-num_bucket: 09_hs_grad=10501, 10_12_some_college_assoc=9740, 13_bachelors=5355, 14_16_graduate=2712, 07_grade_11=1175, 06_grade_10=933, 04_grade_7_8=646, 05_grade_9=514, 08_grade_12=433, 03_grade_5_6=333, 02_grade_1_4=168, 01_preschool=51
+  marital-status: Married-civ-spouse=14976, Never-married=10683, Divorced=4443, Separated=1025, Widowed=993, Married-spouse-absent=418, Married-AF-spouse=23
+  occupation: Prof-specialty=4140, Craft-repair=4099, Exec-managerial=4066, Adm-clerical=3770, Sales=3650, Other-service=3295, Machine-op-inspct=2002, missing=1843, Transport-moving=1597, Handlers-cleaners=1370, Farming-fishing=994, Tech-support=928, Protective-serv=649, Priv-house-serv=149, Armed-Forces=9
+  relationship: Husband=13193, Not-in-family=8305, Own-child=5068, Unmarried=3446, Wife=1568, Other-relative=981
+  race: White=27816, Black=3124, Asian-Pac-Islander=1039, Amer-Indian-Eskimo=311, Other=271
+  sex: Male=21790, Female=10771
+  hours-per-week_bucket: 36-40=16100, 41-50=5938, 21-35=3952, 1-20=2928, 51-60=2533, 61+=1110
+  capital-gain_bucket: none=29849, low=948, medium=909, high=855
+  capital-loss_bucket: none=31042, medium=661, low=510, high=348
+  native-country_group: United-States=29170, North-America-other=1418, Asia=671, Other=663, Europe=521, South-America=118

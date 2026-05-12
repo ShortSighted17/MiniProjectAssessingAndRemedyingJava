@@ -1,0 +1,4 @@
+com\coverageproject\enhancement\EnhancementTest.class
+com\coverageproject\core\CoverageTest.class
+com\coverageproject\core\PatternTest.class
+com\coverageproject\mups\MupAlgorithmsTest.class

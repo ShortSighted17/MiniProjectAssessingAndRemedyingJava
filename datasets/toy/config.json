@@ -1,0 +1,15 @@
+{
+  "name": "toy",
+  "format": "uci_delimited",
+  "data_file": "data.csv",
+  "delimiter": ",",
+  "has_header": true,
+  "columns": ["a", "b", "c", "label"],
+  "feature_cols": ["a", "b", "c"],
+  "label_col": "label",
+  "domains": {"a": ["0","1"], "b": ["0","1"], "c": ["0","1"]},
+  "class_values": ["yes","no"],
+  "figure_11": {"tau_values": [1, 2, 3]},
+  "figure_16": {"tau_values": [1, 2], "levels": [2], "naive_level": 2},
+  "figure_17": {"tau": 2, "levels": [2]}
+}

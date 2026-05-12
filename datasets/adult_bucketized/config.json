@@ -1,0 +1,165 @@
+{
+  "name": "adult_bucketized",
+  "format": "uci_delimited",
+  "data_file": "adult_bucketized.csv",
+  "delimiter": ",",
+  "has_header": true,
+  "columns": [
+    "age_bucket",
+    "workclass",
+    "education-num_bucket",
+    "marital-status",
+    "occupation",
+    "relationship",
+    "race",
+    "sex",
+    "hours-per-week_bucket",
+    "capital-gain_bucket",
+    "capital-loss_bucket",
+    "native-country_group",
+    "income"
+  ],
+  "label_col": "income",
+  "feature_cols": [
+    "age_bucket",
+    "education-num_bucket",
+    "marital-status",
+    "relationship",
+    "race",
+    "sex",
+    "hours-per-week_bucket",
+    "capital-gain_bucket"
+  ],
+  "domains": {
+    "age_bucket": [
+      "17-24",
+      "25-34",
+      "35-44",
+      "45-54",
+      "55-64",
+      "65+"
+    ],
+    "workclass": [
+      "Federal-gov",
+      "Local-gov",
+      "Never-worked",
+      "Private",
+      "Self-emp-inc",
+      "Self-emp-not-inc",
+      "State-gov",
+      "Without-pay",
+      "missing"
+    ],
+    "education-num_bucket": [
+      "01_preschool",
+      "02_grade_1_4",
+      "03_grade_5_6",
+      "04_grade_7_8",
+      "05_grade_9",
+      "06_grade_10",
+      "07_grade_11",
+      "08_grade_12",
+      "09_hs_grad",
+      "10_12_some_college_assoc",
+      "13_bachelors",
+      "14_16_graduate"
+    ],
+    "marital-status": [
+      "Divorced",
+      "Married-AF-spouse",
+      "Married-civ-spouse",
+      "Married-spouse-absent",
+      "Never-married",
+      "Separated",
+      "Widowed"
+    ],
+    "occupation": [
+      "Adm-clerical",
+      "Armed-Forces",
+      "Craft-repair",
+      "Exec-managerial",
+      "Farming-fishing",
+      "Handlers-cleaners",
+      "Machine-op-inspct",
+      "Other-service",
+      "Priv-house-serv",
+      "Prof-specialty",
+      "Protective-serv",
+      "Sales",
+      "Tech-support",
+      "Transport-moving",
+      "missing"
+    ],
+    "relationship": [
+      "Husband",
+      "Not-in-family",
+      "Other-relative",
+      "Own-child",
+      "Unmarried",
+      "Wife"
+    ],
+    "race": [
+      "Amer-Indian-Eskimo",
+      "Asian-Pac-Islander",
+      "Black",
+      "Other",
+      "White"
+    ],
+    "sex": [
+      "Female",
+      "Male"
+    ],
+    "hours-per-week_bucket": [
+      "1-20",
+      "21-35",
+      "36-40",
+      "41-50",
+      "51-60",
+      "61+"
+    ],
+    "capital-gain_bucket": [
+      "high",
+      "low",
+      "medium",
+      "none"
+    ],
+    "capital-loss_bucket": [
+      "high",
+      "low",
+      "medium",
+      "none"
+    ],
+    "native-country_group": [
+      "Asia",
+      "Europe",
+      "North-America-other",
+      "Other",
+      "South-America",
+      "United-States"
+    ]
+  },
+  "figure_10": {
+    "tau": 200,
+    "selection_strategy": "worst_omitted_subgroup",
+    "max_candidate_mups": 50,
+    "num_subgroups_to_plot": 3,
+    "subgroup_test_size": 20,
+    "subgroup_train_sizes": [
+      0, 5, 10, 15, 20, 25, 30, 35, 40, 45,
+      50, 55, 60, 65, 70, 75, 80, 85, 90, 95,
+      100, 105, 110, 115, 120
+    ]
+  },
+  "figure_11": {
+    "tau_values": [5, 10, 25, 50, 100, 250, 500]
+  },
+  "figure_16": {
+    "tau_values": [25, 50, 100, 250, 500],
+    "levels": [2, 3]
+  },
+  "figure_17": {
+    "tau": 100,
+    "levels": [2, 3, 4],
+    "max_dimensions": 8
+  }
+}
