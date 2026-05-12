@@ -1,5 +1,0 @@
-tau,threshold_rate,method,level,runtime_seconds,num_added_rows
-1,0.1250000000,Naive (l=2),2,0.0002707000000,0
-1,0.1250000000,Greedy (l=2),2,0.0006616000000,0
-2,0.2500000000,Naive (l=2),2,2.320000000e-05,0
-2,0.2500000000,Greedy (l=2),2,2.530000000e-05,0
